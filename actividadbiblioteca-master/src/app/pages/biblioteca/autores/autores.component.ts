@@ -16,12 +16,11 @@ export class AutoresComponent implements OnInit {
   public nacionalidad :string;
 
 
-
-
-  constructor() { }
+ constructor() { }
 
   ngOnInit() {
   }
+  
   saveform(){
   alert(this.nombre)
   }
