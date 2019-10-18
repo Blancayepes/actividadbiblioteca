@@ -1,0 +1,27 @@
+{{titulo }}
+{{nombre}}
+{{apellido}}
+{{fecnac}}
+{{nacionalidad}}
+<form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">nombre</label>
+        <input type="text"[(ngModel)]="nombre" name="nombre">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputapellido">apellido</label>
+        <input type="text"[(ngModel)]="apellido" name="apellido">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputfecnac">fecnac</label>
+      <input type="text" [(ngModel)]="fecnac" name="fecnac">
+    </div>
+    <div class="form-group">
+      <label for="inputnacionalidad">nacionalidad</label>
+      <input type="text" [(ngModel)]="nacionalidad" name="nacionalidad">
+    </div>
+    
+    <button type="button" (click)="saveform()">click></button>
+  </form>
