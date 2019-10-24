@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./editoriales.component.css']
 })
 export class EditorialesComponent implements OnInit {
-
+  public titulo = "Editoriales";
+  public autor :string 
+  public lugarpublicacion :string;
+  public fechapublicacion :string;
+  public editorial :string;
   constructor() { }
 
   ngOnInit() {

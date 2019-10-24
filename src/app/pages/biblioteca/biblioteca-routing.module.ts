@@ -18,7 +18,7 @@ const routes: Routes = [
     component: AutoresComponent
   },
   {
-    path:'editorial',
+    path:'editoriales',
     component: EditorialesComponent
   },
   {

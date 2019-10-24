@@ -1,0 +1,33 @@
+{{titulo }}
+
+<form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputtitulo">titulo</label>
+        <input type="text"[(ngModel)]="titulo" name="titulo">
+      </div>
+      
+    </div>
+    <div class="form-group">
+            <label for="inputdescripcion">descripcion</label>
+            <input type="text"[(ngModel)]="descripcion" name="descripcion">
+        </div>
+        <div class="form-group">
+      <label for="inputlugarpaginas">paginas</label>
+      <input type="text" [(ngModel)]="paginas" name="paginas">
+    </div>
+    <div class="form-group">
+      <label for="inputcontenido">contenido</label>
+      <input type="text" [(ngModel)]="contenido" name="contenido">
+    </div>
+    <div class="form-group">
+        <label for="inputcategoria">categoria</label>
+        <input type="text" [(ngModel)]="categoria" name="categoria">
+      </div>
+      <div class="form-group">
+            <label for="inputaño">año</label>
+            <input type="text" [(ngModel)]="anno" name="categoria">
+          </div>
+    
+    <button type="button" (click)="saveform()">click></button>
+  </form>

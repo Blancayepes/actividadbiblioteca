@@ -1,0 +1,29 @@
+{{titulo }}
+
+<form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputtitulo">titulo</label>
+        <input type="text"[(ngModel)]="titulo" name="titulo">
+      </div>
+      
+    </div>
+    <div class="form-group">
+            <label for="inputautor">autor</label>
+            <input type="text"[(ngModel)]="autor" name="autor">
+        </div>
+        <div class="form-group">
+      <label for="inputlugarpublicacion">lugar publicacion</label>
+      <input type="text" [(ngModel)]="lugarpublicacion" name="lugarpublicacion">
+    </div>
+    <div class="form-group">
+      <label for="inputfechapublicacion">fecha publicacion</label>
+      <input type="text" [(ngModel)]="fechapublicacion" name="fechapublicacion">
+    </div>
+    <div class="form-group">
+        <label for="inputeditorial">editorial</label>
+        <input type="text" [(ngModel)]="editorial" name="editorial">
+      </div>
+    
+    <button type="button" (click)="saveform()">click></button>
+  </form>
