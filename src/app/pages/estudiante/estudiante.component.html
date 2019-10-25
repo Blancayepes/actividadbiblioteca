@@ -1,13 +1,23 @@
-<br>
-<br>
-<br>
-<br>
-<div class="row">
-  <div class="col-6">
-    <app-student-table></app-student-table>
+{{titulo }}
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">nombre</label>
+      <input type="text"[(ngModel)]="nombre" name="nombre">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputapellido">apellido</label>
+      <input type="text"[(ngModel)]="apellido" name="apellido">
+    </div>
   </div>
-  <div class="col-6">
-    <app-student-form></app-student-form>
+  <div class="form-group">
+    <label for="inputemail">email</label>
+    <input type="text" [(ngModel)]="email" name="email">
   </div>
-
-</div>
+  <div class="form-group">
+    <label for="inputtelefono">telefono</label>
+    <input type="text" [(ngModel)]="telefono" name="telefono">
+  </div>
+  
+  <button type="button" (click)="saveform()">click></button>
+</form>
