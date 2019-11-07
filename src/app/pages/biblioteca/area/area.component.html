@@ -1,1 +1,18 @@
-<p>area works!</p>
+{{titulo }}
+
+<form FormGroup="editorialoForm" >
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputtitulo">codigo</label>
+        <input type="text" FormControlName="code" name="codigo">
+      </div>
+      
+    </div>
+    <div class="form-group">
+            <label for="inputautor">Descripcion</label>
+            <input type="text" FormControlName="description" name="autor">
+    </div>
+    
+    
+    <button type="button" (click)="saveform()">click></button>
+  </form>

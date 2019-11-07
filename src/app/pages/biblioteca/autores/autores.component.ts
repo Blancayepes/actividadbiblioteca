@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Form } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 
 @Component({
@@ -9,20 +10,24 @@ import { Form } from '@angular/forms';
 })
 export class AutoresComponent implements OnInit {
 
-  public titulo = "formulrio Autor";
-  public nombre :string 
-  public apellido :string;
-  public fecnac :string;
-  public nacionalidad :string;
 
+  constructor(protected fb: FormBuilder ) { }
 
- constructor() { }
+  public autoresForm: FormGroup;
+  public titulo="formulario de autores";
 
   ngOnInit() {
   }
+  createForm(){
+    this.autoresForm = this.fb.group({
+      code: ['', Validators.required],
+      name: ['', Validators.required],
+      lastname: ['', Validators.required],
+      bd_year: ['', Validators.required],
+      death_year: ['', Validators.required],
+      bd_place: ['', Validators.required]
+      }) 
+    }
   
-  saveform(){
-  alert(this.nombre)
-  }
 
 }

@@ -1,27 +1,28 @@
 {{titulo }}
-{{nombre}}
-{{apellido}}
-{{fecnac}}
-{{nacionalidad}}
-<form>
+
+<form FormGroup="autoresForm">
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="inputEmail4">nombre</label>
-        <input type="text"[(ngModel)]="nombre" name="nombre">
+        <input type="text" FormControlName="name" name="nombre">
       </div>
       <div class="form-group col-md-6">
         <label for="inputapellido">apellido</label>
-        <input type="text"[(ngModel)]="apellido" name="apellido">
+        <input type="text" FormControlName="lastname" name="apellido">
       </div>
     </div>
     <div class="form-group">
-      <label for="inputfecnac">fecnac</label>
-      <input type="text" [(ngModel)]="fecnac" name="fecnac">
+      <label for="inputfecnac">fecha de nacimiento</label>
+      <input type="text" FormControlName="db_year" name="fecnac">
     </div>
     <div class="form-group">
-      <label for="inputnacionalidad">nacionalidad</label>
-      <input type="text" [(ngModel)]="nacionalidad" name="nacionalidad">
+      <label for="inputnacionalidad">fecha de muerte</label>
+      <input type="text" FormControlName="death_year" name="fecha de muerte">
+    </div>
+    <div class="form-group">
+      <label for="inputnacionalidad">lugar de muerte</label>
+      <input type="text" FormControlName="bd_place" name="lugar muerte">
     </div>
     
-    <button type="button" (click)="saveform()">click></button>
-  </form>
+  <button type="button" (click)="saveform()">click></button>
+</form>
