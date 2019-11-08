@@ -1,4 +1,4 @@
-{{titulo }}
+{{authorForm.value|json}}
 
 <form FormGroup="autoresForm">
     <div class="form-row">
@@ -26,3 +26,15 @@
     
   <button type="button" (click)="saveform()">click></button>
 </form>
+<table>
+  <tr>
+      <td>nombre</td>
+      <td>apellido</td>
+    </tr>  
+    <tr *ngFor="let autor of authors">
+          <td> {{autor.name}}</td>
+            <td> {{autor.lastname}}</td>
+    </tr>
+ </table>
+
+

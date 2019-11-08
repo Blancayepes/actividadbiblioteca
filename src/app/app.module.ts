@@ -7,6 +7,8 @@ import { LoginComponent } from './login/login.component';
 import { TemplateComponent } from './template/template.component';
 import {SharedModule} from './shared/shared.module';
 import { AppRoutingModule } from './app.routing';
+import { HttpClientModule } from '@angular/common/http';
+import { AuthorService } from './author.service';
 
 @NgModule({
   declarations: [
@@ -16,10 +18,11 @@ import { AppRoutingModule } from './app.routing';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     SharedModule
   ],
-  providers: [],
+  providers: [AuthorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
